@@ -1,0 +1,64 @@
+
+
+
+
+<h3 align=center> t3a03-buttons-Alesha.html </h3>
+
+
+use ctrl-shift-i for help
+
+<input type=button value="first click" onclick="{
+   alert('welcome to programming')
+}"><br>
+
+<input type=text id="myText01" value="Alesha"><br>
+<textarea id="myArea01" row=4 cols=70></textarea>		
+
+<input type=button value="Input/Output" onclick="{
+   document.all.myArea01.value= document.all.myText01.value
+
+}">
+
+<input type=button value="variables" onclick={
+   myX = 3
+   myWord = 'Dog'
+  // myArray[3] = 'super'
+   document.all.myArea01.value = '3 * 3
+
+<input type=text id="myText02" value=5><br>
+<input type=button value="variables 2" onclick="{
+   myX = document.all.myText02.value
+    document.all.myArea01.value = myX + ' * 3 = ' + myX * myX
+}">
+
+
+<input type=button value="loop" onclick="{
+   for (myLoop=1; myLoop <=3; myLoop++){
+     alert('Loop '+ myLoop)
+}
+}">
+
+<input type=button value="decision" onclick='{
+   myX = 3
+   if (myX == 3){
+       document.all.myArea01.value = 'Yes myX does equal 3. It is' + myX
+   } else {
+      document.all.myArea01.value = 'No myX was ' + myX
+   }
+}">
+
+
+<script>
+
+function myFun(myPass){
+   document.all.myArea01.value = myPass + ' a function called myFun()'
+}
+
+
+<input type=button value="Functions" onclick="{
+   myPass = 'really not fun'
+   myFun(myPass)
+}">
+
+
+
