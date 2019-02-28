@@ -1,0 +1,16 @@
+<h2 align=center>Move Image by Alesha </h2>
+
+<input type=text value=0 size=6 onMouseOver="{
+   this.value = 'x = '+ document.getElementById('Thor').style.left
+}"><br>
+<hr>
+
+<img id="Thor" src="https://www.writeups.org/wp-content/uploads/Thor-Marvel-Comics-Alternate.jpg" id="Thor" style="position:relative; z-index: -1;
+left:0px; top:0px; height:100px; width:100px;">
+
+<input type=button value="Go diagonal" onClick="{
+   document.getElementById('Thor').style.left = parseInt(document.getElementById('Thor').style.left) + 222 + 'px'
+   document.getElementById('Thor').style.top = parseInt(document.getElementById('Thor').style.top) + 222 + 'px'
+}">
+
+
