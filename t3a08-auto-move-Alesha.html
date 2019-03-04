@@ -1,0 +1,23 @@
+<h2 align=center>Auto move by Alesha </h2>
+
+<img Thor src="https://www.writeups.org/wp-content/uploads/Thor-Marvel-Comics-Alternate.jpg" id="Thor" style="position:relative; z-index: -1;
+left:0px; top:0px; height:100px; width:100px;">
+
+
+<script> var myLooping = 0 </script>
+
+<input type=button value="auto right" onclick="{
+   clearInterval(myLooping)
+   myLooping = setInterval(function(){
+      document.getElementById('Thor').style.left = parseInt(document.getElementById('Thor').style.left) + 10 + 'px'
+      
+if (parseInt(document.getElementById('Thor').style.left) > 600){
+         document.getElementById('Thor').style.left = '0px'
+      }
+  }, 60)      
+}">
+
+
+</body>
+</html>
+
