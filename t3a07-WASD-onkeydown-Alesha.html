@@ -1,0 +1,39 @@
+<html>
+<head>
+
+</head>
+
+<body onkeydown="{
+   
+   document.all.myText01.value = event.key 
+   
+   if(event.key == 'd') {
+document.getElementById('Thor').style.left = parseInt(document.getElementById('Thor').style.left) + 10 + 'px'
+   }    // d = go right
+   
+   
+   if(event.key == 's') {
+document.getElementById('Thor').style.top = parseInt(document.getElementById('Thor').style.top) + 10 + 'px'
+   }    // s = go down
+  
+   if(event.key == 'w') {
+document.getElementById('Thor').style.top = parseInt(document.getElementById('Thor').style.top) - 10 + 'px'
+   }    // w = go up 
+
+ if(event.key == 'a') {
+document.getElementById('Thor').style.top = parseInt(document.getElementById('Thor').style.left) - 10 + 'px'
+   }    // a = go up 
+}">
+
+<h2 align=center>WASD by Alesha </h2>
+
+<input id='myText01' type=text value=0 size=6 ><br>
+
+
+
+<img id="Thor" src="https://www.writeups.org/wp-content/uploads/Thor-Marvel-Comics-Alternate.jpg" id="Thor" style="position:relative; z-index: -1;left:0px; top:0px; height:100px; width:100px;">z-index:-1; left:0px; top:0px; height:100px; width:100px;">
+
+
+</body>
+</html>
+
