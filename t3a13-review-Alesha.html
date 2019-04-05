@@ -1,0 +1,92 @@
+<body>
+
+
+
+<input type=button value="The Course" onclick="{
+document.getElementById('myArea01').innerHTML= `<ol>
+<li> input/out- X = document.all.myText01.value // example input document.all.myDiv01.innerHTML = X // example output</li>
+<li> vaiables- X=3</li>
+<li> loops- for (X=0; x < 3; x++){} // example for loop</li>
+<li> decision- if(x<==3) {}</li>
+<li> funtions- --named group of code that can be called multiple times myFun() // activates</li>
+<li> arrays -- a number list of variable x[0] = 3; x[1] = 6;</li>
+<li> objects -- a named list of variables x ={age:20, name:'Alesha'}</li>
+<li> events --trigger c omputer code onMouseover()</li>
+<li> classes -- group variables and funtions to make programming easier methods --> functions </li>
+</ol>`;
+}">
+<input type=button value="The Basic" onclick="{
+document.getElementById('myArea01').innerHTML= `
+   myX = 3
+   myWord = 'Dog'
+  // myArray[3] = 'super'
+   document.all.myArea01.value = '3 * 3'
+`;
+}">
+
+<input type=button value="decisions" onclick="{
+document.getElementById('myArea01').innerHTML=`
+   x =9 
+   if (x == 9){
+      document.all.myArea01.value = 'wow a nine'
+   } else {
+     document.all.myArea01.value = 'wow not a nine'
+`;
+}">
+
+<input type=button value="Loops" onclick="{
+document.getElementById('myArea01').innerHTML=`
+for ( x = 1; x <= 3; x++){
+      
+`;
+}">
+
+<input type=button value="arrays" onclick="{
+document.getElementById('myArea01').innerHTML=`
+   myMax = 3
+   myArray = new Array(myMax)
+   myArray[1] = 'Alesha'
+   myArray[2] = 'Bob'
+   myArray[3] = 'Jim'
+`;
+}">
+
+<input type=button value="Functions" onclick="{
+document.getElementById('myArea01').innerHTML=`
+   myVariable = 2019
+   myFun(myVariable)
+`;
+}">
+<input type=button value="events onmouseover" onmouseover="{
+document.getElementById('myArea01').innerHTML=`
+'You mouse over the button.'
+`;
+}">
+
+<input type=button value="Object" onClick="{
+  person = {   
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 50,
+    eyeColor: 'blue',
+}
+document.all.myArea01.value = 'person.firstName is ' +
+     person.firstName + ' person.age is '
+}"> 
+
+
+<div id="myDiv01">
+</div>
+<textarea id="myArea01" rows=7 cols=100></textarea><br>
+
+
+
+
+
+
+
+
+
+
+
+</body>
