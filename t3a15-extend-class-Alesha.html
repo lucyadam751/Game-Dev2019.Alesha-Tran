@@ -1,0 +1,23 @@
+<input id="myButton131" type="button" value="Extend a class" onclick="{
+class myAnimal {
+   constructor(passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv131').innerHTML= 'Hello '+ this.myName + '. You are ' + this.myAge + 'years olD<br>' }
+} // end class myAnimal
+
+class myCat extends myAnimal {
+
+     myShow(){
+        document.getElementById('myDiv131').innerHTML = this.myName + ' is a great cat who is ' + this.myAge +' years old<br>' }
+} // end extended class myCat
+
+
+mypet = new myCat('Fluffy', 14)
+mypet.myShow()
+}"><br><br>
+
+<div id='myDiv131'>...</div><br> 
+      
