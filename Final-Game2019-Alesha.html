@@ -1,0 +1,37 @@
+<body id="mybody" style="background: url('https://3.bp.blogspot.com/-kaLH9994-oA/UD3iO5JkhzI/AAAAAAAAAIA/Ljbmfn_mj2o/s1600/space-backgrounds-1.jpg') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;" 
+onkeydown="{
+
+ document.all.myText01.value = event.key 
+   
+if(event.key == 'd') {
+  document.getElementById('Kirby').style.left = parseInt(document.getElementById('Kirby').style.left) + 10 + 'px'
+}    // d = go right
+
+if(event.key == 's') {
+  document.getElementById('Kirby').style.top = parseInt(document.getElementById('Kirby').style.top) + 10 + 'px'
+}    // s = go down
+
+if(event.key == 'w') {
+document.getElementById('Kirby').style.top = parseInt(document.getElementById('Kirby').style.top) - 10 + 'px'
+   }    // w = go up 
+ 
+if(event.key == 'a') {
+document.getElementById('Kirby').style.left = parseInt(document.getElementById('Kirby').style.left) -10 + 'px'
+   }    // a = go left 
+
+}">
+
+
+
+<script>
+    myGlobalX = 0;
+</script>
+<input id='myText01' type=text value=0 size=6 >
+
+<img Kirby src="Kirby.png"  id="Kirby"  style="position:absolute; z-index:-1; left:100px; top:300px; height:100px; width:100px;">
+
+<html>
+<head>
+</head>
+
+
