@@ -1,0 +1,38 @@
+<h2 align=center>T4a03-random-bounce-console-score-Alesha.html</h2>
+
+<img Kirby src="http://vignette3.wikia.nocookie.net/supermarioglitchy4/images/c/c7/Kirby_render_for_ssb.jpg/revision/latest?cb=20140505220653"  id="Kirby"  style="position:relative;
+z-index:-1; left:0px; height:100px; width:100px;">
+
+<input type=text id='myScore' value=0>
+
+
+<script>
+var  myLooping = 0
+var  mySpeed = 10
+var  myDirection = 1   //or -1
+var  myTotal = 0
+</script>
+
+
+<input type=button value="auto right" onclick="{
+   clearInterval(myLooping);
+   myLooping = setInterval(function(){
+
+   mySpeed = (Math.floor(Math.random()*50)+5) * myDirection;
+   
+   document.getElementById('Kirby').style.left = parseInt(document.getElementById('Kirby').style.left) + mySpeed + 'px'
+    
+   if (parseInt(document.getElementById('Kirby').style.left) >= 200){
+      myDirection = myDirection * -1;
+      myTotal = myTotal += 1;
+      document.getElementById('myScore').value = myTotal;
+    }
+     
+     console.log(mySpeed);
+     // console.log(myTotal)
+     }, 60)
+}">
+
+</body>
+</html> 
+ 
